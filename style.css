@@ -1,0 +1,107 @@
+.container {
+  /* display: flex; */
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  top: -60%;
+  left: 7%;
+  
+}
+body{
+  background-color: rgb(78, 214, 214);
+}
+.circle {
+ 
+position: absolute;
+ 
+height: 150px;
+ 
+width: 150px;
+ 
+border-radius: 50%;
+ 
+background-color: #fff;
+ 
+margin-top: -75px;
+ 
+margin-left: 1px;
+ 
+z-index: 0;
+ 
+opacity: 0;
+}
+
+.circle-1{
+  -webkit-animation: daire-1 4s ease-out infinite;
+  animation: daire-1 4s ease-out infinite;
+}
+.circle-2{
+  -webkit-animation: daire-2 4s ease-out 0.5s infinite;
+  animation: daire-2 4s ease-out 0.5s infinite;
+}
+.circle-3{
+  -webkit-animation: daire-1 4s ease-out 1s infinite;
+  animation: daire-1 4s ease-out 1s infinite;
+}
+.circle-4{
+  -webkit-animation: daire-2 4s ease-out 1.5s infinite;
+  animation: daire-2 4s ease-out 1.5s infinite;
+}
+
+@keyframes daire-1 {
+  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+  100% {transform: translateY(-200px) translateX(-20px) scale(1); opacity: 0;}
+}
+
+@keyframes daire-1 {
+  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+  100% {transform: translateY(-200px) translateX(-20px) scale(1); opacity: 0;}
+}
+
+@-webkit-keyframes daire-2 {
+  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+  100% {transform: translateY(-200px) translateX(20px) scale(1); opacity: 0;}
+}
+
+@keyframes daire-2 {
+  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+  100% {transform: translateY(-200px) translateX(20px) scale(1); opacity: 0;}
+}
+
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  padding: 200px 0;
+}
+
+.image-div{
+
+width: 400px;
+
+height: auto;
+
+z-index: 9;
+}
+.image-div img{
+  
+width: 100%;
+  
+height: 100%;
+}
+
+.content{position: relative;}
+
+
+
+.image-div img{
+  z-index: 9;
+}
+
+.main-container {
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+}
